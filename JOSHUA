@@ -1,0 +1,16 @@
+while True:
+    height = float(input("enter your weight in kilogrammes: "))
+    weight = float(input("Enter you height in meters: "))
+
+    bmi = weight / height ** 2
+
+    print(f"bmi: {round(bmi, 2)}")
+    if bmi < 18.5:
+        print("you are underweight")
+    elif bmi < 25:
+        print("you are in healthyweight")
+    elif bmi < 30:
+        print("you are overweight")
+    else:
+        print("you are obese")
+    print("\n")
